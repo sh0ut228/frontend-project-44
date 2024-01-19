@@ -13,6 +13,9 @@ function isPrime(num) {
   }
   return 'yes';
 }
+
+const PlayerName = names();
+
 function playprime() {
   const rand = Math.floor(Math.random() * 101);
   const prime = isPrime;
@@ -26,7 +29,6 @@ function playprime() {
   console.log(`Let's try again, ${PlayerName}!`);
   return 0;
 }
-const PlayerName = names();
 const gameName = playprime;
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 brainGameStart(PlayerName, gameName);

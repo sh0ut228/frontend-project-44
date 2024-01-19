@@ -12,19 +12,26 @@ function generator() {
   const rand = Math.floor(Math.random() * 101);
   const rand2 = Math.floor(Math.random() * 101);
   const rand3 = randomOperation();
-  return `${rand} ${rand3} ${rand2}`;
+  return [rand, rand3, rand2];
 }
 
-function calculateExpression(expression) {
-  return eval(expression);
+function calculateExpression(rand3, rand, rand2) {
+  switch (rand3) {
+    case '*':
+      return rand * rand2;
+    case '+':
+      return rand + rand2;
+    default:
+      return rand - rand2;
+  }
 }
 
 function braicalc(PlayerName) {
   const expression = generator();
-  const correctanswer = calculateExpression(expression);
-  console.log(`Question: ${expression}`);
+  const correctanswer = calculateExpression(expression[1], expression[0], expression[2]);
+  console.log('Question:', expression[0], expression[1], expression[2]);
   const answer = readlineSync.question('Your answer:');
-  if (parseInt(answer, 10) === correctanswer) {
+  if (parseInt(answer, 10) === parseInt(correctanswer, 10)) {
     console.log('Correct!');
     return 1;
   } console.log(`${answer} is wrong answer ;(.Correct answer was ${correctanswer}.`);
