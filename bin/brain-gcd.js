@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
-import { names } from '/home/student031/frontend-project-44/src/cli.js';
-import { brainGameStart } from '/home/student031/frontend-project-44/index.js';
-
+import { names } from '../src/cli.js';
+import { brainGameStart } from '../index.js';
 
 function findGCD(num1, num2) {
   let gcd = 1;
@@ -11,8 +10,9 @@ function findGCD(num1, num2) {
     }
   }
   return gcd;
-};
+}
 
+const PlayerName = names();
 
 function braingcd() {
   const rand = Math.floor(Math.random() * 101);
@@ -27,9 +27,8 @@ function braingcd() {
   console.log(`${answer} is wrong answer ;(.Correct answer was ${correctanswer}.`);
   console.log(`Let's try again,${PlayerName}`);
   return 0;
-};
+}
 
 const gameName = braingcd;
-const PlayerName = names();
 console.log('Find the greatest common divisor of given numbers.');
 brainGameStart(PlayerName, gameName);

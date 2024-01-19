@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import { names } from '/home/student031/frontend-project-44/src/cli.js';
-import { brainGameStart } from '/home/student031/frontend-project-44/index.js';
+import { names } from '../src/cli.js';
+import { brainGameStart } from '../index.js';
 
 function mass() {
   const lena = Math.floor(Math.random() * 6) + 5;
