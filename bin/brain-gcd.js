@@ -19,7 +19,7 @@ function braingcd() {
   const rand = Math.floor(Math.random() * 101);
   const rand2 = Math.floor(Math.random() * 101);
   const correctanswer = findGCD(rand, rand2);
-  console.log(rand, rand2);
+  console.log(`Question: ${rand} ${rand2}`);
   const answer = readlineSync.question('Your answer:');
   if (parseInt(answer, 10) === correctanswer) {
     console.log('Correct!');
