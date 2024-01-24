@@ -19,10 +19,9 @@ const PlayerName = names();
 
 function playprime() {
   const rand = Math.floor(Math.random() * 101);
-  const prime = isPrime;
   console.log(`Question: ${rand}`);
   const answer = readlineSync.question('Your answer:');
-  const correctAnswer = prime(rand);
+  const correctAnswer = isPrime(rand);
   if (answer === correctAnswer) {
     console.log('Correct!');
     return 1;
