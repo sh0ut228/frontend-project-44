@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+/* eslint no-eval: 0 */
 import readlineSync from 'readline-sync';
 import { names } from '../src/cli.js';
 import { brainGameStart } from '../index.js';

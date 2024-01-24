@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 export function brainGameStart(PlayerName, gameName) {
   let correctCount = 0;
   while (correctCount < 3) {
