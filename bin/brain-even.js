@@ -13,7 +13,7 @@ function braineven(PlayerName) {
     return 1;
   }
   console.log(`${answer} is wrong answer ;(.Correct answer was ${correctanswer}.`);
-  console.log(`Let's try again, ${PlayerName}`);
+  console.log(`Let's try again, ${PlayerName}!`);
   return 0;
 }
 
