@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // import { names } from '../src/cli.js';
 // names();
+/* eslint-disable import/prefer-default-export */
 
 import readlineSync from 'readline-sync';
 

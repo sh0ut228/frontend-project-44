@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable import/prefer-default-export */
 import readlineSync from 'readline-sync';
 import { names } from '../src/cli.js';
 import { brainGameStart } from '../index.js';
