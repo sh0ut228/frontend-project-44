@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { greetings } from '../src/cli.js';
+import { names } from '../src/cli.js';
 import { brainGameStart } from '../index.js';
 
 function isPrime(num) {
@@ -31,6 +31,6 @@ function brainPrime(PlayerName) {
 }
 
 const gameName = brainPrime;
-const PlayerName = greetings();
+const PlayerName = names();
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 brainGameStart(PlayerName, gameName);
