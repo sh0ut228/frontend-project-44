@@ -6,7 +6,7 @@ import { names } from '../src/cli.js';
 
 function findGCD(num1, num2) {
   let gcd = 1;
-  if (num1 === 0 || num2 === 0){
+  if (num1 === 0 || num2 === 0) {
     gcd = 1;
   }
   for (let i = 1; i <= num1 && i <= num2; i += 1) {
@@ -17,7 +17,7 @@ function findGCD(num1, num2) {
   return gcd;
 }
 
-function braingcd() {
+function braingcd(PlayerName) {
   const rand = Math.floor(Math.random() * 101);
   const rand2 = Math.floor(Math.random() * 101);
   const correctanswer = findGCD(rand, rand2);

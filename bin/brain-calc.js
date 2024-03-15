@@ -4,6 +4,7 @@
 //
 import readlineSync from 'readline-sync';
 import { brainGameStart } from '../src/index.js';
+import { names } from '../src/cli.js';
 
 function randomOperation() {
   const operations = ['+', '-', '*'];
