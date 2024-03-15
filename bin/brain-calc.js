@@ -3,8 +3,7 @@
 /* eslint no-eval: 0 */
 //
 import readlineSync from 'readline-sync';
-import { names } from '../src/cli.js';
-import { brainGameStart } from '../index.js';
+import { brainGameStart } from '../src/index.js';
 
 function randomOperation() {
   const operations = ['+', '-', '*'];
@@ -42,8 +41,7 @@ function braicalc(PlayerName) {
   console.log(`Let's try again, ${PlayerName}!`);
   return 0;
 }
-
-const gameName = braicalc;
 const PlayerName = names();
+const gameName = braicalc;
 console.log('What is the result of the expression?');
 brainGameStart(PlayerName, gameName);

@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 /* eslint-disable import/prefer-default-export */
+import { names } from '../src/cli.js';
+
 export function brainGameStart(PlayerName, gameName) {
   let correctCount = 0;
   while (correctCount < 3) {

@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 /* eslint-disable import/prefer-default-export */
 import readlineSync from 'readline-sync';
-import { names } from '../src/cli.js';
-import { brainGameStart } from '../index.js';
+import { brainGameStart } from '../src/index.js';
 
 function mass() {
   const lena = Math.floor(Math.random() * 6) + 5;
@@ -30,7 +29,6 @@ function PlayProgression(PlayerName) {
   console.log(`Let's try again, ${PlayerName}!`);
   return 0;
 }
-
 const PlayerName = names();
 const gameName = PlayProgression;
 console.log('What number is missing in the progression?');

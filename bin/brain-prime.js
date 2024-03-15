@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /* eslint-disable import/prefer-default-export */
 import readlineSync from 'readline-sync';
+import { brainGameStart } from '../src/index.js';
 import { names } from '../src/cli.js';
-import { brainGameStart } from '../index.js';
 
 function isPrime(num) {
   if (num <= 1) {
@@ -29,8 +29,7 @@ function brainPrime(PlayerName) {
   console.log(`Let's try again, ${PlayerName}!`);
   return 0;
 }
-
-const gameName = brainPrime;
 const PlayerName = names();
+const gameName = brainPrime;
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 brainGameStart(PlayerName, gameName);
