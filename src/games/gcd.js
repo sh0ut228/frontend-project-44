@@ -17,7 +17,7 @@ function findGCD(num1, num2) {
 }
 
 function brainGCD() {
-  const question = [getRandomNumber(0, 100), getRandomNumber(0, 100)];
+  const question = [getRandomNumber(1, 100), getRandomNumber(1, 100)];
   const answer = findGCD(...question).toString();
   return [question.join(' '), answer];
 }
