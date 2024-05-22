@@ -1,5 +1,4 @@
 #!/usr/bin/env node
+import greetings from '../src/cli.js';
 
-import runBrain from '../src/games/calc.js';
-
-runBrain();
+greetings();
